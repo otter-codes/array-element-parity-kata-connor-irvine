@@ -1,5 +1,6 @@
-object Hello extends App {
+object ArrayElement extends App {
 
-  def greet : String = "hello"
-
+  def Stripper(list: List[Int]) : Int ={
+    1
+  }
 }
