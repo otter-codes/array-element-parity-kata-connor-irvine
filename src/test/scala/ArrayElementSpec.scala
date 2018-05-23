@@ -13,5 +13,8 @@ class ArrayElementSpec extends WordSpec with MustMatchers {
     "when given a multiple +/- inputs return the only (-) unique input" in {
       ArrayElement.Stripper(List(-2, 2, -3)) mustEqual -3
     }
+    "when given a long list of multiple +/- inputs return the only unique input" in {
+      ArrayElement.Stripper(List(1, -1, -2, 3, -4, 4, 5, -3, 2)) mustEqual 5
+    }
   }
 }
