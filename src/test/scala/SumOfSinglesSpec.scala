@@ -13,5 +13,8 @@ class SumOfSinglesSpec  extends WordSpec with MustMatchers {
     "when given an input return with a matching pair eliminate them and leave the unique element" in {
       SumOfSingles.Calculator(List(1, 2, 2)) mustEqual 1
     }
+    "when given an input return with a three pair eliminate them and leave the unique element" in {
+      SumOfSingles.Calculator(List(1, 1, 2, 2, 3, 4, 4)) mustEqual 3
+    }
   }
 }
