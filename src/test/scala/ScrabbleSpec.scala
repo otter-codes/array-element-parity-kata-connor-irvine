@@ -22,5 +22,9 @@ class ScrabbleSpec extends WordSpec with MustMatchers {
       Scrabble.scrabbleBoard("hi") mustEqual 5
       }
 
+      "when given an input of the word 'telephone' the Scrabble Board will return a score of '14'" in {
+        Scrabble.scrabbleBoard("telephone") mustEqual 14
+      }
+
 }
 }
